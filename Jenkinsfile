@@ -3,6 +3,7 @@ pipeline {
   stages {
     stage('Run Tests') {
       steps {
+        chmod +r /home/tes/pom.xml
         sh './mvnw clean test'
       }
       post {
