@@ -5,6 +5,7 @@ pipeline {
       steps {
         sh 'chmod +x mvnw' 
         sh 'pwd'
+        sh 'cd ..'
         sh './mvnw clean test'
       }
     }
