@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Run Tests') {
       steps {
-        chmod '+x mvnw' && sh './mvnw clean test'
+        sh 'chmod +x mvnw' && sh './mvnw clean test'
       }
     }
   }
