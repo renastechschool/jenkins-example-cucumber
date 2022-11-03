@@ -11,17 +11,17 @@ public class StepDefinitions {
 
     @Given("The user wants to go to Orange HRM Website")
     public void the_user_wants_to_go_to_orange_hrm_website() {
-        System.setProperty("webdriver.chrome.driver","chromedriver");
+        //System.setProperty("webdriver.chrome.driver","chromedriver");
 
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("headless");
-        WebDriver driver = new ChromeDriver(options);
+        //ChromeOptions options = new ChromeOptions();
+        //options.addArguments("headless");
+        //WebDriver driver = new ChromeDriver(options);
 
         // Maximize the browser
-        driver.manage().window().maximize();
+        //driver.manage().window().maximize();
 
         // Launch Website
-        driver.get("https://hrm-test.renastechschool.com/");
+        //driver.get("https://hrm-test.renastechschool.com/");
     }
     @When("The user wants to enter username and password")
     public void the_user_wants_to_enter_username_and_password() {
